@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="../css/studentdashboard.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-content">
+                <h1 class="dashboard-title">Welcome back, John</h1>
+                <p class="dashboard-subtitle">Here's what's happening with your academic progress</p>
+            </div>
+            <a href="chatbot.html" class="dashboard-button">Ask AI Career Advisor</a>
+        </header>
+
+        <!-- Quick Stats -->
+        <section class="quick-stats">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <h2 class="stat-title">Attendance Rate</h2>
+                        <span class="stat-icon">👥</span>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value">92%</div>
+                        <div class="progress-bar" style="width: 92%;"></div>
+                        <p class="stat-detail">8 absences this semester</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <h2 class="stat-title">Current GPA</h2>
+                        <span class="stat-icon">📄</span>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value">3.7</div>
+                        <div class="progress-bar" style="width: 85%;"></div>
+                        <p class="stat-detail">Top 15% of your class</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <h2 class="stat-title">Courses</h2>
+                        <span class="stat-icon">📚</span>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value">5</div>
+                        <div class="progress-bar" style="width: 100%;"></div>
+                        <p class="stat-detail">15 credit hours total</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <h2 class="stat-title">Next Exam</h2>
+                        <span class="stat-icon">📅</span>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value">3 Days</div>
+                        <div class="progress-bar" style="width: 75%;"></div>
+                        <p class="stat-detail">Computer Science 101</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Events -->
+        <section class="upcoming-events">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Upcoming Events</h2>
+                    <p class="card-subtitle">Your schedule for the next few days</p>
+                </div>
+                <div class="card-content">
+                    <div class="event-list">
+                        <div class="event-item">
+                            <div class="event-icon">📄</div>
+                            <div class="event-details">
+                                <p class="event-title">Computer Science 101 Exam</p>
+                                <p class="event-time">Friday, 10:00 AM</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-icon">👥</div>
+                            <div class="event-details">
+                                <p class="event-title">Data Structures Study Group</p>
+                                <p class="event-time">Tomorrow, 3:30 PM</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-icon">📅</div>
+                            <div class="event-details">
+                                <p class="event-title">Career Fair</p>
+                                <p class="event-time">Next Monday, 9:00 AM</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-icon">📚</div>
+                            <div class="event-details">
+                                <p class="event-title">AI Workshop</p>
+                                <p class="event-time">Next Wednesday, 2:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="calendar.html" class="card-button">View Full Calendar</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Progress -->
+        <section class="course-progress">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Course Progress</h2>
+                    <p class="card-subtitle">Your current courses and completion</p>
+                </div>
+                <div class="card-content">
+                    <div class="progress-list">
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <p class="progress-title">Computer Science 101</p>
+                                <span class="progress-value">85%</span>
+                            </div>
+                            <div class="progress-bar" style="width: 85%;"></div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <p class="progress-title">Data Structures & Algorithms</p>
+                                <span class="progress-value">72%</span>
+                            </div>
+                            <div class="progress-bar" style="width: 72%;"></div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <p class="progress-title">Database Systems</p>
+                                <span class="progress-value">65%</span>
+                            </div>
+                            <div class="progress-bar" style="width: 65%;"></div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <p class="progress-title">Web Development</p>
+                                <span class="progress-value">90%</span>
+                            </div>
+                            <div class="progress-bar" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="courses.html" class="card-button">View All Courses</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

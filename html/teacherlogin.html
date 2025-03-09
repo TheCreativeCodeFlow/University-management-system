@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Management System</title>
-    <link rel="stylesheet" href="studentlogin.css">
+    <link rel="stylesheet" href="../css/teacherlogin.css">
 </head>
 <body>
     <div class="container">
         <h1>University Management System</h1>
         <div class="tabs">
-            <button class="tab active">Student</button>
-            <button class="tab"><a href="teacherlogin\teacherlogin.html">Teacher</a></button>
+            <a href="studentlogin.html"><button class="tab">Student</button></a>
+            <button class="tab active">Teacher</button>
         </div>
         <div class="login-box">
-            <h2>Student Login</h2>
-            <p>Enter your credentials to access your student dashboard</p>
+            <h2>Teacher Login</h2>
+            <p>Enter your credentials to access your teacher dashboard</p>
             <form>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" value="student@university.edu" required>
+                    <input type="email" id="email" value="teacher@university.edu" required>
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>

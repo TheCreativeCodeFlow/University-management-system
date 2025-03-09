@@ -1,0 +1,246 @@
+/* css/styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    padding: 20px;
+}
+
+/* General Styles */
+.dashboard-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.header-content {
+    text-align: left;
+}
+
+.dashboard-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #202124;
+    margin-bottom: 8px;
+}
+
+.dashboard-subtitle {
+    font-size: 14px;
+    color: #5f6368;
+}
+
+.dashboard-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.dashboard-button:hover {
+    background-color: #1557b0;
+}
+
+/* Quick Stats */
+.quick-stats {
+    margin-bottom: 32px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+}
+
+.stat-card {
+    background-color: white;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.stat-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #202124;
+}
+
+.stat-icon {
+    font-size: 16px;
+    color: #5f6368;
+}
+
+.stat-content {
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #202124;
+    margin-bottom: 8px;
+}
+
+.progress-bar {
+    height: 8px;
+    background-color: #1a73e8;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.stat-detail {
+    font-size: 12px;
+    color: #5f6368;
+}
+
+/* Upcoming Events and Course Progress */
+.card {
+    background-color: white;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 32px;
+}
+
+.card-header {
+    padding: 16px;
+    border-bottom: 1px solid #dadce0;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #202124;
+    margin-bottom: 4px;
+}
+
+.card-subtitle {
+    font-size: 12px;
+    color: #5f6368;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.event-list,
+.progress-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.event-item,
+.progress-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.event-icon,
+.progress-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(26, 115, 232, 0.1);
+    border-radius: 50%;
+    font-size: 16px;
+    color: #1a73e8;
+}
+
+.event-details {
+    flex: 1;
+}
+
+.event-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #202124;
+    margin-bottom: 4px;
+}
+
+.event-time {
+    font-size: 12px;
+    color: #5f6368;
+}
+
+.progress-header {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.progress-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #202124;
+}
+
+.progress-value {
+    font-size: 12px;
+    color: #5f6368;
+}
+
+.card-footer {
+    padding: 16px;
+    border-top: 1px solid #dadce0;
+}
+
+.card-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #1a73e8;
+    color: #1a73e8;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card-button:hover {
+    background-color: #1a73e8;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-header,
+    .card-content,
+    .card-footer {
+        padding: 12px;
+    }
+}
